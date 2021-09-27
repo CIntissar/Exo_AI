@@ -19,7 +19,7 @@ public class SimonManager : AIManager
         }
     }
 
-    public override void NextDestination()
+    protected override void NextDestination()
     {
         indexNextDestination = 0;
 

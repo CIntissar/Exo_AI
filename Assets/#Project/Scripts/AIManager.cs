@@ -32,7 +32,7 @@ public class AIManager : MonoBehaviour // Parent qui aura des descendants
         }
     }
 
-    public virtual void NextDestination()
+    protected virtual void NextDestination()
     {
         actualDestination = targetPoints[indexNextDestination].GivePoint();  // on peut obtenir un point en Vector3 qui sera sa destination actuelle
         agent.SetDestination(actualDestination); // il va dire à l'agent, sa destination à chaque frame.

@@ -21,7 +21,7 @@ public class EdgarManager : AIManager
         }
     }
 
-    public override void NextDestination()
+    protected override void NextDestination()
     {
         
         int oldIndexDestination = indexNextDestination;
